@@ -61,6 +61,8 @@ RUN \
 && \
   pip install --no-cache-dir . \
 && \
+  pip install --no-cache-dir mkdocs-macros-plugin \
+&& \
   if [ "${WITH_PLUGINS}" = "true" ]; then \
     pip install --no-cache-dir \
       mkdocs-material[recommended] \
